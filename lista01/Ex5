@@ -9,20 +9,20 @@ programa {
     leia (cliente)
     escreva("Metros cúbicos consumidos: ")
     leia(consumo)
-    escreva( "Qual tipo de consumidor você é?\n1 = RESIDENCIAL\n2 = COMERCIAL\n3 = INDUSTRIAL ")
+    escreva( "Qual tipo de consumidor você é?\nR = RESIDENCIAL\nC = COMERCIAL\nI = INDUSTRIAL ")
     leia (tipo)
 
-    se( tipo == 1){
+    se( tipo == "R"){
       valor = 5 + consumo * 0.05}
     
-    se (tipo == 2 ){
+    se (tipo == "C" ){
       se(consumo <= 80){
           valor = 500
       }
       senao{valor = 500 + 0.25 * (consumo - 80)}}
        
     
-    se(tipo == 3){
+    se(tipo == "I"){
       se(consumo <= 100){
         valor = 800
       }
@@ -36,8 +36,3 @@ programa {
     
   }
 }
-    
-    
-  
-   
-  }
