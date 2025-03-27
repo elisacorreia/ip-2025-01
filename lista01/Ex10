@@ -1,0 +1,24 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    
+    real a, b, c, d, det
+
+    escreva("Digite elementos de uma matriz M\n")
+    escreva("Primeiro: ")
+    leia(a)
+    escreva("Segundo: ")
+    leia(b)
+    escreva("Terceiro: ")
+    leia(c)
+    escreva("Quarto: ")
+    leia(d)
+
+    det = ( a * d ) - ( b * c )
+    
+    escreva("O VALOR DO DETERMINANTE E = ", mat.arredondar(det, 2))
+
+
+
+}
+}
