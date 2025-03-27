@@ -1,0 +1,23 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    inteiro horas, valor, resto
+
+    escreva("Horas de aluguel: ")
+    leia(horas)
+
+    resto = horas % 3
+    
+   
+    se(resto == 0){
+      valor = (horas / 3) * 10
+    }
+    senao{
+      valor = resto * 5 + ((horas - resto) / 3 ) * 10
+      
+  }
+
+    escreva("VALOR A PAGAR É: ", mat.arredondar(valor, 2))
+    
+  }
+}
