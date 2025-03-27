@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, contador
+
+    contador = 0
+
+    escreva("Primeiro número: ")
+    leia (n1)
+    escreva("Segundo número: ")
+    leia(n2)
+
+    se (n1 % 2 == 0){
+      enquanto (contador != n2){
+        contador = contador + 1
+        escreva(" ", n1)
+        n1 = n1 + 2
+      }
+    }
+    senao{
+      escreva("O PRIMEIRO NÚMERO NÃO É PAR")
+    }
+    
+  }
+}
