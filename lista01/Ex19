@@ -1,0 +1,23 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    inteiro n, k
+    real soma
+    
+    k = 1
+    soma = 0
+
+    escreva("Número positivo e maior que 1: ")
+    leia(n)
+
+    se(n <= 1){
+      escreva("Número inválido!") }
+    senao{
+      enquanto (k <= n){
+      soma = 1 / k + soma 
+      k++}
+      escreva(mat.arredondar(soma,6))
+    }
+    
+  }
+}
