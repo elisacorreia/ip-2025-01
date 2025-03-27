@@ -1,0 +1,21 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real altura, a, v, area, raiz
+
+    raiz = mat.raiz(3, 2)
+
+    escreva("Qual é a altura da pirâmide? ")
+    leia(altura)
+    escreva("Qual é a medida da aresta da base? ")
+    leia(a)
+
+    area = (3 * (a * a) * raiz) / 2
+    v = (area * altura) / 3
+
+    escreva("O VOLUME DA PIRÂMIDE É = ", mat.arredondar(v,2), " METROS CÚBICOS")
+
+
+
+  }
+}
