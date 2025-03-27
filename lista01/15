@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    inteiro contador, n, quad
+
+    contador = 0
+
+    escreva("Escreva um número: ")
+    leia(n)
+
+    se(5 < n e n < 2000){
+      enquanto (contador != n){
+        contador = contador + 2
+        escreva(contador, "¨", contador, " = ", contador * contador, "\n")
+        
+      }
+      
+
+    }
+  }
+}
