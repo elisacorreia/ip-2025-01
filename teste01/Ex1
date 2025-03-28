@@ -1,0 +1,17 @@
+package main
+import "fmt"
+
+func main() {
+    n := 0
+  fmt.Println("Informe um número: ")
+  fmt.Scanf("%v", &n)
+  if n == 0{
+      fmt.Println("Número nulo")
+  }
+  if n > 0{
+      fmt.Println("Número positivo")
+  }
+  if n < 0{
+      fmt.Println("Número negativo")
+  }
+}
