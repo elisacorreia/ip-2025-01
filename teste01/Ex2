@@ -1,0 +1,15 @@
+package main
+import "fmt"
+
+func main() {
+    n := 0
+  fmt.Println("Informe um número: ")
+  fmt.Scanf("%v", &n)
+  if n > 20 && n < 90{
+     fmt.Println("Número está compreendido")
+  } else{
+   fmt.Println("Número não está compreendido")}
+  
+     
+  
+}
