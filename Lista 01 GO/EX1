@@ -1,0 +1,23 @@
+package main
+import "fmt"
+
+func main() {
+    a, b, c := 0, 0, 0
+  fmt.Println("Digite sua primeira nota: ")
+  fmt.Scanf("%v", &a)
+  fmt.Println("Digite sua segunda nota: ")
+  fmt.Scanf("%v", &b)
+  fmt.Println("Digite sua terceira nota: ")
+  fmt.Scanf("%v", &c)
+  
+  soma := a + b + c
+  div := soma / 3
+  
+  fmt.Println("MÉDIA = ", div)
+  
+  if div >= 6{
+      fmt.Println("APROVADO")
+  } else{
+      fmt.Println("REPROVADO")
+  }
+}
