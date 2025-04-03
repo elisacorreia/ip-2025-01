@@ -4,13 +4,13 @@ import "fmt"
 func main() {
     var sal, energia, consumo, kw, desc float64
     fmt.Println("Valor salário mínimo: ")
-    fmt.Scanf("%d", &sal)
+    fmt.Scanf("%f", &sal)
     fmt.Println("Quantos kW sua residência gasta?")
-    fmt.Scanf("%v", &energia)
+    fmt.Scanf("%f", &energia)
     
     kw = sal * 7 / 1000
     consumo = energia * kw
-    desc = consumo - consumo / 10
+    desc = consumo * 0.9
     fmt.Println("Custo por kW: R$", kw, "\nCusto do consumo: R$", consumo, "\nCusto com desconto: R$", desc)
     
 }
