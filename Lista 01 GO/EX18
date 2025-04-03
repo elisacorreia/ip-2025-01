@@ -1,0 +1,23 @@
+package main
+import "fmt"
+
+func main() {
+    var a1, n, r, soma, contador int
+    
+    contador = 0
+    soma = 0
+
+    fmt.Print("Primeiro termo: ")
+    fmt.Scanf("%d", &a1)
+    fmt.Print("Razão: ")
+    fmt.Scanf("%d", &r)
+    fmt.Print("Número de termos: ")
+    fmt.Scanf("%d", &n)
+
+    for contador=0; contador < n; contador++{
+        soma = a1 + (r * contador) + soma
+        }
+    fmt.Print(soma)
+    
+  
+}
