@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+func main() {
+    var n, k int
+    var soma float64
+
+    k = 1
+    soma = 0
+
+    fmt.Print("Número positivo e maior que 1: ")
+    fmt.Scan(&n)
+
+    if n <= 1 {
+        fmt.Println("Número inválido!")
+    } else {
+        for k <= n {
+            soma = 1 / float64(k) + soma
+            k++
+        }
+        fmt.Println(soma)
+    }
+}
