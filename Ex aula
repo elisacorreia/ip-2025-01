@@ -1,0 +1,20 @@
+package main
+import "fmt"
+
+func main() {
+	n, nota, contador, media:= 0, 0, 0, 0
+	fmt.Println("Quantas provas são?")
+    fmt.Scanf("%v", &n)
+
+	for contador != n {
+		contador = contador + 1
+		fmt.Println("Qual a nota N", contador,"?")
+    	fmt.Scanf("%v", &nota)
+		media = media + nota
+
+
+	}
+	media = media / n
+	fmt.Println(media)
+
+}
