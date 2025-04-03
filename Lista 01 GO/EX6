@@ -1,0 +1,25 @@
+package main
+import "fmt"
+
+func main() {
+    var f, c float64
+    var contador, resp int
+    
+    contador = 0
+    
+    fmt.Println("Quantas temperaturas converter? ")
+    fmt.Scanf("%d", &resp)
+    
+    for contador != resp{
+        contador = contador + 1
+        fmt.Println("Pergunta N", contador, ": Quantos Fahrenheit você quer em Celsius? ")
+        fmt.Scanf("%f", &f)
+        
+        c = 5 * (f - 32) / 9
+        
+        fmt.Println("Resposta N", contador, ": ", f, " FAHRENHEIT EQUIVALE A ", c, " CELSIUS")
+    }
+    
+    
+    
+}
