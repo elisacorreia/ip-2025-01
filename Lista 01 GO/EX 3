@@ -1,0 +1,34 @@
+package main
+import "fmt"
+
+func main() {
+    var quad, num, n1, n2, n3 int
+    fmt.Println("Primeiro número: ")
+    fmt.Scanf("%d", &n1)
+     if n1 < 1 || n1 > 9{
+         fmt.Println("DÍGITO INVÁLIDO")
+     } else {
+         fmt.Println("Segundo número: ")
+    fmt.Scanf("%d", &n2)
+    
+    if n2 < 1 || n2 > 9 {
+        fmt.Println("DÍGITO INVÁLIDO")
+    } else {
+            fmt.Println("Terceiro número: ")
+            fmt.Scanf("%v", &n3)
+            if n3 < 1 || n3 > 9{
+                fmt.Println("DÍGITO INVÁLIDO")}else {
+                    n1 = n1 * 100
+                    n2 = n2 * 10
+                    n3 = n3 * 1
+                    
+                    num = n1 + n2 + n3
+                    quad = num * num 
+                    
+                    fmt.Println(num, ", ", quad)
+                }
+            
+        }
+        
+     }
+}
