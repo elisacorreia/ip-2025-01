@@ -1,0 +1,24 @@
+package main
+import "fmt"
+
+func main() {
+    var a, b, c, delta float64
+    
+    fmt.Print("A: ")
+    fmt.Scanf("%f", &a)
+    
+    fmt.Print("B: ")
+        fmt.Scanf("%f", &b)
+        
+    fmt.Print("C: ")
+    fmt.Scanf("%f", &c)
+    
+    delta = (b * b) - 4 * a * c 
+        
+        fmt.Println("O VALOR DE DELTA É = ", delta)
+        
+    
+    
+    
+    
+}
