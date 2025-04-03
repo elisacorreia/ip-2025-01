@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func main() {
+    var horas, min, seg, total int
+
+    fmt.Print("Horas: ")
+    fmt.Scan(&horas)
+    fmt.Print("Minutos: ")
+    fmt.Scan(&min)
+    fmt.Print("Segundos: ")
+    fmt.Scan(&seg)
+
+    total = horas*3600 + min*60 + seg
+
+    fmt.Println("O TEMPO EM SEGUNDOS É =", total)
+}
