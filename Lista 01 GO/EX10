@@ -1,0 +1,28 @@
+package main
+import "fmt"
+
+func main() {
+    var a, b, c, d, det float64
+    
+    fmt.Println("Digite elementos de uma matriz M")
+    fmt.Print("Primeiro: ")
+    fmt.Scanf("%f", &a)
+    
+    fmt.Print("Segundo: ")
+        fmt.Scanf("%f", &b)
+        
+    fmt.Print("Terceiro: ")
+    fmt.Scanf("%f", &c)
+    
+    fmt.Print("Quarto: ")
+    fmt.Scanf("%f", &d)
+    
+    det = ( a * d ) - ( b * c )
+        
+        fmt.Println("O VALOR DE DET É = ", det)
+        
+    
+    
+    
+    
+}
