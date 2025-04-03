@@ -1,0 +1,22 @@
+package main
+import "fmt"
+
+func main() {
+    var raio, altura, custo, area float64
+    
+    fmt.Println("Raio da lata: ")
+    fmt.Scanf("%f", &raio)
+    
+    fmt.Println("A altura da lata é: ")
+        fmt.Scanf("%f", &altura)
+        
+        area = 2 * (3.14159 * raio * raio) + 2 * (3.14159 * raio * altura)
+        custo = 100 * area
+        
+        fmt.Println("O VALOR DO CUSTO É: ", custo)
+        
+    
+    
+    
+    
+}
