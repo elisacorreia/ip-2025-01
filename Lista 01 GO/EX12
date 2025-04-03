@@ -1,0 +1,18 @@
+package main
+import "fmt"
+
+func main() {
+    var horas, valor int
+
+    fmt.Println("Horas de aluguel: ")
+    fmt.Scanf("%d", &horas)
+
+     if horas % 3 == 0 {
+      valor = (horas / 3) * 10
+    } else{
+       valor = (horas / 3) * 10 + (horas % 3) * 5}
+
+    fmt.Print("VALOR A PAGAR É: ", valor)
+    
+  
+}
