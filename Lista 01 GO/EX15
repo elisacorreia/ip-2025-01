@@ -1,0 +1,19 @@
+package main
+import "fmt"
+
+func main() {
+    var contador, n int
+    contador = 0
+
+    fmt.Println("Escreva um número: ")
+    fmt.Scanf("%d", &n)
+
+     if 5 < n && n < 2000{
+         for contador != n{
+             contador = contador + 2
+             fmt.Println(contador, "¨", contador, " = ", contador * contador)
+         }
+     }
+    
+  
+}
