@@ -2,19 +2,19 @@ package main
 import "fmt"
 
 func main() {
-	n, nota, contador, media:= 0, 0, 0, 0
-	fmt.Println("Quantas provas são?")
-    fmt.Scanf("%v", &n)
+	alunos, nota, contador, media:= 0, 0, 0, 0
+	fmt.Println("Quantos alunos são?")
+    fmt.Scanf("%v", &alunos)
 
-	for contador != n {
+	for contador != alunos {
 		contador = contador + 1
-		fmt.Println("Qual a nota N", contador,"?")
+		fmt.Println("Qual a nota do aluno N", contador,"?")
     	fmt.Scanf("%v", &nota)
 		media = media + nota
 
 
 	}
-	media = media / n
-	fmt.Println(media)
+	media = media / alunos
+	fmt.Println("A média global da turma é: ", media)
 
 }
