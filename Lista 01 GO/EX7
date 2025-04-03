@@ -1,0 +1,24 @@
+package main
+import "fmt"
+
+func main() {
+    var f, c, pol, mm float64
+    
+    fmt.Println("Quantos Fahrenheit você quer em Celsius? ")
+    fmt.Scanf("%f", &f)
+    
+ 
+        fmt.Println("Quantas polegadas de chuva você quer em milímetros? ")
+        fmt.Scanf("%f", &pol)
+        
+        c = 5 * (f - 32) / 9
+        mm = pol * 25.4
+        
+        fmt.Println("O VALOR EM CESIUS = ", c)
+        fmt.Println("A QUANTIDADE DE CHUVA E = ", mm)
+        
+    
+    
+    
+    
+}
