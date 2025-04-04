@@ -1,0 +1,16 @@
+package main
+import "fmt"
+
+func main() {
+    var n int
+  fmt.Print("Digite o primeiro número: ")
+  fmt.Scanf("%d", &n)
+  
+  if n % 5 == 0{
+      fmt.Print("O número é divisível")
+  } else {
+      fmt.Print("O número não é divisível")
+  }
+  
+      
+}
