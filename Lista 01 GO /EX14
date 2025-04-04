@@ -1,0 +1,25 @@
+package main
+
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	var altura, a, v, area, raiz float64
+
+	// Calculando a raiz quadrada de 3
+	raiz = math.Pow(3, 0.5)
+
+	fmt.Print("Qual é a altura da pirâmide? ")
+	fmt.Scan(&altura)
+	fmt.Print("Qual é a medida da aresta da base? ")
+	fmt.Scan(&a)
+
+	// Calculando a área e o volume
+	area = (3 * (a * a) * raiz) / 2
+	v = (area * altura) / 3
+
+	// Exibindo o resultado com duas casas decimais
+	fmt.Printf("O VOLUME DA PIRÂMIDE É = %.2f METROS CÚBICOS\n", v)
+}
